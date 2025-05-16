@@ -1,0 +1,148 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header & Navbar */
+header {
+  background: #001f3f;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+.navbar .logo img {
+  width: 50px;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  margin-left: 1.5rem;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Main Content Area */
+main {
+  padding: 2rem;
+}
+
+/* Dashboard Cards */
+.dashboard .stats-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.dashboard .card {
+  background: #fff;
+  padding: 1.5rem;
+  flex: 1;
+  min-width: 250px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+/* Books Table */
+.table-container {
+  margin-top: 2rem;
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+thead {
+  background: #001f3f;
+  color: #fff;
+}
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+/* Form Styles */
+.form-container {
+  margin-bottom: 1.5rem;
+}
+.form-container form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.form-container input, .form-container button {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-container input {
+  flex: 1;
+  min-width: 120px;
+}
+.form-container button {
+  background: #001f3f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.form-container button:hover {
+  background: #003366;
+}
+
+/* Flash Messages */
+.flash-msg {
+  margin-bottom: 1rem;
+}
+.flash-msg .alert {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+}
+.flash-msg .alert.error {
+  background: #ffdddd;
+  border: 1px solid #ff5c5c;
+  color: #a30000;
+}
+.flash-msg .alert.success {
+  background: #ddffdd;
+  border: 1px solid #5cff5c;
+  color: #006600;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #001f3f;
+  color: #fff;
+  margin-top: 2rem;
+}
